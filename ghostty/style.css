@@ -1,0 +1,17 @@
+/* Compact tab bar (libadwaita default: 34px tabs + 6px padding above and below) */
+tabbar tabbox {
+  min-height: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+tabbar tab {
+  min-height: 0;
+  padding: 3px 4px;
+}
+
+/* The close button is the tallest child of a tab and would keep it at 24px */
+tabbar tab button.image-button {
+  min-width: 16px;
+  min-height: 16px;
+}
